@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+   box-sizing: border-box;
+}
+@font-face {
+    font-family: montserrat;
+    src: url(MontserratBlack-3zOvZ.ttf);
+}
+/* header */
+header{
+    display: flex;
+    align-items:center ;
+    padding: 10px ;
+    top: 0;
+    font-family: montserrat;
+    width: 100%;
+    justify-content: space-between;
+}
+.logo-container{
+    
+    margin-left: 50px;
+}
+
+.logo {
+    margin:0 ;
+}
+ 
+.menu-container{
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-menu{
+    list-style: none;
+    font-style: bold;
+    gap: 50px;
+    margin: 0 auto;
+}
+ul li{
+padding: 10px;
+display: inline;
+text-align: center;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    padding: 0 10px;
+    color: #000;
+}
+
+.nav-menu a:hover {
+    color: #578EA6;
+}
+
+.icons{
+    margin-right: 30px;
+
+}
