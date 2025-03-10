@@ -60,3 +60,30 @@ text-align: center;
 
 /*hero-section*/
 
+.hero-section{
+    display: flex;
+    align-items: center;
+    background: url(/serious-young-sportsman-drinking-water.jpg) no-repeat center center/cover;
+    min-height: 900px;
+    color: white;
+    padding: 50px 20px;
+    position: relative;
+
+}
+
+.hero-content {
+    position: absolute;
+
+
+}
+
+
+
+
+
+
+
+.hero-image {
+    width: 200%;
+    height: auto;
+}
