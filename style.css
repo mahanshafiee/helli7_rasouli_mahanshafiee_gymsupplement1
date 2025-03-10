@@ -18,14 +18,11 @@ header{
     justify-content: space-between;
 }
 .logo-container{
-    
     margin-left: 50px;
 }
-
 .logo {
     margin:0 ;
 }
- 
 .menu-container{
     flex-grow: 1;
     display: flex;
@@ -55,6 +52,11 @@ text-align: center;
 }
 
 .icons{
-    margin-right: 30px;
-
+    margin-right: 50px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
 }
+
+/*hero-section*/
+
