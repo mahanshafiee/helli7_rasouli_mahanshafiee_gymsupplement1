@@ -184,3 +184,22 @@ text-align: center;
     text-shadow: 3px 3px 3px black;
 
 }
+
+
+/*Benefit-section*/
+
+.Benefit-section{
+    display: flex;
+    align-items: center;
+    height: 200px;
+    width: 800px;
+    margin: 160px auto;
+    justify-content: space-between;
+}
+
+
+.Benefit-items{
+    display: flex;
+    flex-direction: column;
+    font-family: montserrat;
+}
