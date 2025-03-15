@@ -191,10 +191,12 @@ text-align: center;
 .Benefit-section{
     display: flex;
     align-items: center;
+    max-width: 1000px;
     height: 200px;
-    width: 800px;
+    width: 70%;
     margin: 160px auto;
     justify-content: space-between;
+    padding: 0 20px;
 }
 
 
@@ -202,4 +204,33 @@ text-align: center;
     display: flex;
     flex-direction: column;
     font-family: montserrat;
+    font-size: larger;
+    text-align: center;
 }
+
+.Benefit-icons{
+font-size: xx-large;
+margin-bottom: 20px;
+}
+
+.benefit-caption{
+    margin-top: 10px;
+    font-size: 13px;
+}
+
+
+@media (max-width: 768px) {
+    .Benefit-section {
+        flex-direction: column;
+        height: auto;
+        margin: 40px auto;
+        padding: 10px;
+    }
+
+    .Benefit-items {
+        margin: 20px 0;
+    }}
+
+    .Benefit-icons {
+        font-size: 1.5rem;
+    }
