@@ -234,3 +234,31 @@ margin-bottom: 20px;
     .Benefit-icons {
         font-size: 1.5rem;
     }
+
+    /*Best Sellers */
+
+    .Best-sellers-title{
+        font-size: xx-large;
+        font-weight: bold;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .Best-sellers-subtitle{
+        padding-top: 10px;
+        font-size: large;
+        text-align: center;
+
+    }
+
+
+    .Best-sellers-items{
+        display:flex;
+        position: relative;
+    }
+    
+
+    .sellers-items{
+
+
+    }
