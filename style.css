@@ -291,20 +291,52 @@ margin-bottom: 20px;
 
     .detail-section{
         display: flex;
-        position: relative;
-        margin-top: -150px;
-        height: 600px;
+        flex-direction: column;
+        margin-top: -6rem;
+        height: 37.5rem;
         width: 100%;
+        justify-content: center;
+        padding-left: 7rem;
         background-color: #c2bfbfb2;
     }
 
     .detail-content{
+        display: flex;
+        flex-direction: column;
+        width: 68.75rem;
+        height: 21.875rem;
+        background-color: white;
+        justify-content: center ;
+        padding-left: 4.375em;
+
 
     }
 
+    .detail-content h2{
+        font-family: montserrat;
+    }
 
+    .detail-content p{
+        padding-top: 1rem;
+        max-width: 40rem;
+        font-size: large;
+        text-align: left ;
+    }
     .detail-image{
+        display: flex;
+        position: absolute;
+        z-index: 3;
+        background-color: rgb(31, 104, 100);
+        width: 12.5rem;
+        height: 18.75rem;
+        min-height: 18.75rem;
+        box-shadow: var(--main-boxshadow);
+        margin-left: 45%;
 
-        
     }
 
+    .detail-image img{
+        width: 350px;
+        height: 300px;
+        margin-top: 10px;
+    }
