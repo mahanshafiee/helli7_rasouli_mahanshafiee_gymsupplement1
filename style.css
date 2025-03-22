@@ -340,3 +340,19 @@ margin-bottom: 20px;
         height: 300px;
         margin-top: 10px;
     }
+
+    @media (max-width:768px){
+
+        .detail-section{
+            margin-top: -3rem;
+            padding-left: 1.25rem;
+            min-height: 31.25rem;
+        }
+
+        .detail-content{
+            width: 90%;
+            padding-left: 1.25rem;
+            padding-right: 1.25rem;
+            min-height: 18.75rem;
+        }
+    }
