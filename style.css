@@ -355,4 +355,21 @@ margin-bottom: 20px;
             padding-right: 1.25rem;
             min-height: 18.75rem;
         }
+
+        .detail-content p{
+            max-width: 100%;
+            font-size: medium;
+
+        }
+    
+        .detail-image{
+            width: 40%;
+            min-width: 9.375rem;
+            height:15.625rem;
+            min-height: 12.5rem;
+            right: 2%;
+            top: 6.25rem;
+        }
+
     }
+
