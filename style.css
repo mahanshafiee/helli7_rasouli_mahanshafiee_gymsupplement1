@@ -380,6 +380,51 @@ margin-bottom: 20px;
 
     .Discount-section{
 
+        width: 100%;
+        height: 500px;
+        display: flex;
+        position: absolute;
+        gap: 50px;
+        padding-left: 6.5%;
+    }
+
+    .discount-items{
+        display: flex;
+        width: 45%;
+        height: 400px;
+        background-color: whitesmoke;
+        margin-top: 70px;
+    }
+
+    .discount-items img{
+        width: 400px;
+        height: 330px;
         
     }
+
+    .discount-contents{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        text-align: center;
+        align-items: center;
+        margin-left: 40px;
+    }
+    .discount-items h2{
+        font-family: montserrat;
+        font-size: xx-large;
+    }
+
+    .discount-items span{
+        color: red;
+        font-size: xx-large;
+        font-weight: bolder;
+        font-family: montserrat;
+    }
+
+    .discount-items p{
+        margin-top: 30px;
+        font-size: large;
+    }
+
 
