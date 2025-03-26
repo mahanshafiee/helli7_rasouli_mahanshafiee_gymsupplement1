@@ -517,3 +517,11 @@ margin-bottom: 20px;
     .deal-content button{
         align-self: center;
     }
+
+    /*Subscription section*/
+
+    .subscription section{
+        display: flex;
+        position: relative;
+        background-image: url(images/fitness-supplementen-3.jpeg) no-repeat center/cover;
+    }
