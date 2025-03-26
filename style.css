@@ -468,3 +468,24 @@ margin-bottom: 20px;
     .sellers-sec-items:hover{
         transform: scale(1.1);
     }
+
+
+
+    /*daily deal section*/
+
+    .Daily-deal{
+        display: flex;
+        margin-top: -8rem;
+        height: 37.5rem;
+        width: 100%;
+        padding-left: 7rem;
+        background-color: #c2bfbfb2;
+    }
+
+
+    .deal-content h2{
+        font-size: xxx-large;
+        font-family: montserrat;
+    }
+
+    .deal-content
