@@ -542,5 +542,26 @@ margin-bottom: 20px;
         background-color: rgba(0, 0, 0, 0.5);
         z-index: 1;
     }
+    
+    .subscription-content {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        z-index: 2;
+        gap: 18px;
+        align-items: center;
+    }
+
+    .subscription-content p{
+        font-size: large;
+    }
+
+    .subscription-content h2{
+        font-size: 1.6rem;
+        font-family: montserrat;
+        text-shadow: 3px 3px 3px black;
+    }
+    
+    
 
     
