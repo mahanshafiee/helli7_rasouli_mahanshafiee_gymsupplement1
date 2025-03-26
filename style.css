@@ -488,4 +488,32 @@ margin-bottom: 20px;
         font-family: montserrat;
     }
 
-    .deal-content
+    .deal-timer{
+        display: flex;
+        font-size: xxx-large;
+        width: 420px;
+        justify-content: space-between;
+    }
+
+    .deal-timers-info{
+        width: 410px;
+        display: flex;
+        justify-content: space-between;
+        font-size: larger;
+    }
+
+    .deal-content{
+        display: flex;    
+        flex-direction: column;
+        justify-content: center;
+        gap: 25px;
+        margin-left: 60px;
+    }
+
+    .Daily-deal img{
+        margin-left: 35rem;
+    }
+
+    .deal-content button{
+        align-self: center;
+    }
