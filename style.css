@@ -562,10 +562,44 @@ margin-bottom: 20px;
         text-shadow: 3px 3px 3px black;
     }
 
-    .subscription-content form{
+    .subscription-form{
         
+        width: 90%;
+        max-width: 37.5rem;
+        margin: 0 auto;
+    }
+
+    .input-container{
+        position: relative;
+        width: 100%;
     }
     
-    
+    .input-container input{
+        width: 100%;
+        padding: 0.75rem 8rem 0.75rem 0.75rem;
+        border-radius: 35px;
+        font-size: 1rem;
+        background: transparent;
+        border: 3px solid white;
+    }
+
+    .sub-btn{
+        position: absolute;
+        right: 5px;
+        top: 50%;
+        transform: translateY(-50%);
+        padding: 0.5rem 1rem;
+        border-radius: 20px;
+        background-color: rgb(71, 71, 71);
+        color: #fff;
+    }
+
+    .sub-btn:hover{
+        color: black;
+        background-color: white;
+        transform: translateY(-50%);
+    }
+
+
 
     
