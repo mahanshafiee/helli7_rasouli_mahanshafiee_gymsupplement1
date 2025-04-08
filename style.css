@@ -636,7 +636,7 @@ margin-bottom: 20px;
 
     
       
-      @media screen and (max-width: 768px) {
+      @media screen and (max-width: 992px) {
         /*header resonsive*/
         .menu-container {
           position: relative;
@@ -654,7 +654,6 @@ margin-bottom: 20px;
           background-color: #fff;
           position: absolute;
           top: -500px; 
-          left: 0;
           width: 100%;
           padding: 10px 0;
           box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -679,20 +678,65 @@ margin-bottom: 20px;
         .icons{
             margin-left: 0px;
         }
-      }
+        /*hero-section*/
+        .hero-section {
+            flex-direction: column;
+            padding: 20px;
+            text-align: center;
+            text-shadow: var(--white-shadow);
+          }
+        
+          .hero-content {
+            position: static;
+            margin: 0;
+            font-size: 24px;
+          }
+        
+          .hero-slider {
+            position: static;
+            flex-direction: column;
+            width: 100%;
+            align-items: center;
+            margin-top: 30px;
+          }
+        
+          .slider-item,
+          .slider-item img {
+            font-size: small;
+            width: 90%;
+            height: auto;
+          }
+          .shop-btn{
+            height: 50px;
+          }
+        }
+      
 
       @media screen and (max-width: 480px) {
         .nav-menu a {
           font-size: 0.9rem;
-          padding: 8px;
+          padding: 7px;
         }
       
         .nav-menu li {
-          padding: 8px 0;
+          padding: 7px 0;
         }
       
+       .header-section{
+        margin-left: -30px;
+       }
+
         .icons {
           margin-left: 20px;
         }
+        /*hero-section*/
+        .slider-item,
+          .slider-item img {
+            font-size: small;
+            width: 100%;
+            height: auto;
+          }
       }
+
+      
       
