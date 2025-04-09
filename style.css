@@ -211,10 +211,8 @@ text-align: center;
     align-items: center;
     max-width: 1000px;
     height: 200px;
-    width: 70%;
     margin: 160px auto;
     justify-content: space-between;
-    padding: 0 20px;
 }
 
 
@@ -256,10 +254,9 @@ margin-bottom: 20px;
 
     .Best-sellers-items{
         display:flex;
-        flex-wrap: wrap;
+        flex-wrap: wrap ;
         justify-content: space-around;
         margin: 65px auto;
-
     }
     
 
@@ -276,12 +273,14 @@ margin-bottom: 20px;
         margin-bottom: 50px;
         width: 300px;
         height: 300px;
+        object-fit: cover;
     }
 
     .sellers-items p{
         font-size: 15px;
         font-family: montserrat;
         margin-top: 20px;
+        color: red;
     }
 
     .sellers-items:hover{
@@ -412,7 +411,7 @@ margin-bottom: 20px;
         width: 90%;
         justify-content: space-around;
         margin: 65px auto;
-
+        flex-wrap: wrap;
     }
     
 
@@ -636,107 +635,130 @@ margin-bottom: 20px;
 
     
       
-      @media screen and (max-width: 992px) {
-        /*header resonsive*/
-        .menu-container {
-          position: relative;
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-        }
-      
-        .hamburger {
-          display: block;
-        }
-      
-        .nav-menu {
-          flex-direction: column;
-          background-color: #fff;
-          position: absolute;
-          top: -500px; 
-          width: 100%;
-          padding: 10px 0;
-          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-          z-index: 1000;
-          transition: top 0.3s ease-in-out;
-        }
-      
-        .nav-menu.active {
-          top: 60px;
-        }
-      
-        .nav-menu li {
-          text-align: center;
-          padding: 10px 0;
-        }
-      
-        .nav-menu a {
-          display: block;
-          padding: 10px;
-          font-size: 1rem;
-        }
-        .icons{
-            margin-left: 0px;
-        }
+    @media screen and (max-width: 992px) {
+        /*header*/
+        .menu-container { position: relative; display: flex; justify-content: flex-end; align-items: center; }
+        .hamburger { display: block; margin-right: 20px; }
+        .nav-menu { flex-direction: column; background: #fff; position: absolute; top: -500px; width: 100%; left: 0; padding: 10px 0; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); z-index: 1000; transition: top 0.3s ease-in-out; }
+        .nav-menu.active { top: 60px; }
+        .nav-menu li { text-align: center; padding: 12px 0; display: block; }
+        .nav-menu a { display: block; padding: 10px; font-size: 1rem; }
+        .icons { margin: 0 20px 0 0; }
+        .logo-container { margin-left: 20px; }
         /*hero-section*/
-        .hero-section {
-            flex-direction: column;
-            padding: 20px;
-            text-align: center;
-            text-shadow: var(--white-shadow);
-          }
-        
-          .hero-content {
-            position: static;
-            margin: 0;
-            font-size: 24px;
-          }
-        
-          .hero-slider {
-            position: static;
-            flex-direction: column;
-            width: 100%;
-            align-items: center;
-            margin-top: 30px;
-          }
-        
-          .slider-item,
-          .slider-item img {
-            font-size: small;
-            width: 90%;
-            height: auto;
-          }
-          .shop-btn{
-            height: 50px;
-          }
+        .hero-section { flex-direction: column; padding: 30px; text-align: center; min-height: 600px; text-shadow: var(--white-shadow); margin-bottom: 2rem; }
+        .hero-content { position: static; margin: 0; font-size: 28px; }
+        .hero-content pre { font-size: 16px; margin-top: 20px; }
+        .getstarted-btn { width: 110px; height: 45px; font-size: 16px; }
+        .hero-slider { position: static; flex-direction: column; width: 100%; align-items: center; margin-top: 40px; }
+        .slider-item { width: 85%; height: auto; margin-bottom: 30px; }
+        .slider-item img { width: 100%; height: auto; }
+        .slider-item h1 { bottom: 0; font-size: 1.4rem; margin-bottom: 10px; }
+        .slider-item button { bottom: 0; margin-top: 10px; }
+        .shop-btn { height: 45px; width: 120px; font-size: 18px; }
+        /*benefit-section*/
+        .Benefit-section { flex-direction: column; height: auto; margin: 60px auto 3rem; gap: 25px; padding: 0 15px; }
+        .Benefit-items { font-size: large; transform: scale(0.95); }
+        .Benefit-icons { font-size: x-large; }
+        /*best-seller*/
+        .Best-sellers-items, .Best-seller-sec-items { gap: 15px; margin: 30px auto; }
+        .sellers-items, .sellers-sec-items { width: 48%; height: auto; border-radius: 15px; transform: scale(0.85); margin: 5px; }
+        .sellers-items img, .sellers-sec-items img { width: 100%; height: auto; margin: 20px 0; }
+        .sellers-items h2, .sellers-sec-items h2 { font-size: 1.2rem; }
+        /*detail-section*/
+        .detail-section { margin-top: -2rem; height: auto; padding: 1.5rem; margin-bottom: 3rem; }
+        .detail-content { width: 100%; height: auto; padding: 1.5rem; }
+        .detail-content h2 { font-size: 1.4rem; }
+        .detail-content p { max-width: 100%; font-size: medium; }
+        .detail-image { position: relative; width: 100%; height: auto; min-height: 10rem; margin: 1rem 0 0; transform: scale(0.9); }
+        .detail-image img { width: 100%; height: auto; max-width: 280px; max-height: 220px; }
+        /*discount-section*/
+        .Discount-section { flex-direction: column; height: auto; padding: 0 1.5rem; gap: 20px; margin-bottom: 3rem; }
+        .discount-items { width: 100%; height: auto; margin: 20px 0; transform: scale(0.95); flex-direction: column; align-items: center; }
+        .discount-items img { width: 100%; height: auto; max-height: 200px; max-width: 300px; }
+        .discount-contents { margin-left: 0; padding: 15px; text-align: center; }
+        .discount-items h2, .discount-items span { font-size: 1.5rem; }
+        .discount-items p { font-size: medium; margin-top: 15px; }
+        .discount-items .shop-btn { width: 110px; height: 40px; font-size: 16px; }
+    
+        .sellers-sec { margin: 40rem 0 3rem; }
+        /*daily-deal*/
+        .Daily-deal { flex-direction: column; height: auto; padding: 1.5rem; margin-bottom: 3rem; }
+        .deal-content { margin-left: 0; text-align: center; }
+        .deal-content h2 { font-size: xx-large; }
+        .deal-timer { width: 100%; font-size: xx-large; justify-content: center; gap: 10px; }
+        .deal-timers-info { width: 100%; justify-content: center; gap: 20px; }
+        .Daily-deal img { margin-left: 0; width: 100%; height: auto; max-width: 300px; margin-top: 20px; }
+        /*subscription-section*/
+        .subscription-section { width: 95%; height: auto; padding: 1.5rem; margin-bottom: 3rem; }
+        .subscription-content h2 { font-size: 1.4rem; }
+        .subscription-form { width: 100%; }
+        .input-container input { padding: 0.6rem 6rem 0.6rem 0.6rem; }
+        /*footer-container*/
+        .footer-container { flex-direction: column; width: 90%; height: auto; gap: 25px; margin-top: 30px; }
+        .footer-section { height: auto; padding-bottom: 15px; margin-top: 2rem; }
+    }
+    
+    @media screen and (max-width: 480px) {
+        .nav-menu a { font-size: 0.85rem; padding: 6px; }
+        .nav-menu li { padding: 6px 0; }
+        .header-section { padding: 5px; }
+        .logo-container { margin-left: 10px; }
+        .logo { font-size: 1.2rem; }
+        .icons { margin-right: 10px; gap: 8px; }
+    
+        .hero-section { min-height: 450px; padding: 20px; margin-bottom: 1.5rem; }
+        .hero-content { font-size: 18px; }
+        .hero-content pre { font-size: 12px; }
+        .getstarted-btn { width: 90px; height: 35px; font-size: 14px; }
+        .getstarted-btn:hover { width: 110px; height: 40px; font-size: 15px; }
+        .slider-item { width: 100%; transform: scale(0.9); }
+        .slider-item h1 { font-size: 1.2rem; }
+        .shop-btn { width: 100px; height: 40px; font-size: 15px; }
+    
+        .Benefit-section { margin: 40px auto 2rem; gap: 20px; }
+        .Benefit-items { font-size: medium; transform: scale(0.9); }
+        .Benefit-icons { font-size: large; }
+    
+        .sellers-items, .sellers-sec-items { width: 100%; transform: scale(0.8); }
+        .sellers-items h2, .sellers-sec-items h2 { font-size: 1.1rem; }
+    
+        .detail-section { padding: 1rem; margin-bottom: 2rem; }
+        .detail-content { padding: 1rem; }
+        .detail-content h2 { font-size: 1.2rem; }
+        .detail-content p { font-size: small; }
+        .detail-image { transform: scale(0.85); }
+    
+        .Discount-section { padding: 0 1rem; gap: 15px; margin-bottom: 2rem; }
+        .discount-items { transform: scale(0.9); }
+        .discount-items img { max-height: 180px; max-width: 250px; }
+        .discount-items h2, .discount-items span { font-size: 1.3rem; }
+        .discount-items p { font-size: small; }
+        .discount-items .shop-btn { width: 100px; height: 35px; font-size: 14px; }
+    
+        .sellers-sec { margin-top: 50rem;
+            margin-bottom: 10rem;
+    
         }
-      
+    
+        .Daily-deal { padding: 1rem; margin-bottom: 2rem; }
+        .deal-content h2 { font-size: x-large; }
+        .deal-timer { font-size: xx-large; gap: 8px; }
+        .deal-timers-info { font-size: small; gap: 15px; }
+        .Daily-deal img { max-width: 250px; margin: 0 auto; }
+    
+        .subscription-section { padding: 1rem; margin-bottom: 2rem; }
+        .subscription-content h2 { font-size: 1.2rem; }
+        .subscription-content p { font-size: small; }
+        .input-container input { padding: 0.5rem 5rem 0.5rem 0.5rem; }
+        .sub-btn { padding: 0.3rem 0.7rem; font-size: 0.85rem; }
+    
+        .footer-container { gap: 20px; }
+        .footer-container h2 { font-size: 1.2rem; }
+        .footer-container p, .footer-container li { font-size: 0.9rem; }
+        .footer-section { margin-top: 1.5rem; }
+    }
 
-      @media screen and (max-width: 480px) {
-        .nav-menu a {
-          font-size: 0.9rem;
-          padding: 7px;
-        }
       
-        .nav-menu li {
-          padding: 7px 0;
-        }
-      
-       .header-section{
-        margin-left: -30px;
-       }
-
-        .icons {
-          margin-left: 20px;
-        }
-        /*hero-section*/
-        .slider-item,
-          .slider-item img {
-            font-size: small;
-            width: 100%;
-            height: auto;
-          }
-      }
-
       
       
