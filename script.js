@@ -6,3 +6,7 @@ hamburger.onclick = function () {
   navMenu.classList.toggle('active');
   this.classList.toggle('active');
 };
+
+
+/*daily timer*/
+
